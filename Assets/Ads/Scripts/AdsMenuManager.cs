@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.Advertisements;
 using UnityEngine.UI;
 using Completed;
 
@@ -78,5 +77,4 @@ public class AdsMenuManager : MonoBehaviour {
         //Disable the "OR" text.
         optionPanel.transform.GetChild(1).gameObject.SetActive(false);
     }
-
 }

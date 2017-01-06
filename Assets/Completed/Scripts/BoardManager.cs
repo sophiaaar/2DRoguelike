@@ -30,7 +30,7 @@ namespace Completed
 		public int rows = 8;											//Number of rows in our game board.
 		public Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
 		public Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
-        public Count crateCount = new Count(1, 2);                      //Lower and upper limit for our random number of reawrd crates per level. [EDITED BY SOPHIA FOR TUTORIAL PURPOSES]
+        public Count crateCount = new Count(1, 2);                      //Lower and upper limit for our random number of reawrd crates per level.
         public GameObject exit;											//Prefab to spawn for exit.
         public GameObject xmasExit;                                     //Prefab to spawn for exit.
         public GameObject[] floorTiles;									//Array of floor prefabs.
@@ -200,7 +200,7 @@ namespace Completed
                 LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
 
             //Instantiate a random number of reward crate tiles based on minimum and maximum, at randomized positions.
-			LayoutObjectAtRandom(rewardTiles, 1, 5);
+            LayoutObjectAtRandom(rewardTiles, 1, 5);
 
             //Determine number of enemies based on current level number, based on a logarithmic progression
             int enemyCount = (int)Mathf.Log(level, 2f);
